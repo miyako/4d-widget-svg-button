@@ -39,7 +39,6 @@
 		
 	<g 
 		id="borders" 
-		filter="none"
 		fill-opacity="1"
 		stroke-opacity="1">
 
@@ -51,14 +50,15 @@
 			rx="5"
 			ry="5" 
 			width="140"
-			height="38"			
+			height="38"	
+			filter="none"		
 			fill="#000000"
 			fill-opacity="1"
 			stroke="none" 
 			id="button-background" 
 			/>
-			<!-- fill-opacity on filter fill not supported in 4D -->	
 			
+			<!-- fill-opacity on filter fill not supported in 4D -->	
 			<!-- alignment-baseline not supported in 4D -->
 			<!-- auto | baseline | before-edge | text-before-edge | middle | central | after-edge | text-after-edge | ideographic | alphabetic | hanging | mathematical -->
 			
@@ -74,9 +74,25 @@
 			fill="#EEEEEE">
 			Click!
 		</text>-->
-		
+
+		<rect 
+			shape-rendering="geometricPrecision"
+			transform="translate(5,5)"
+			x="0" 
+			y="0"
+			rx="5"
+			ry="5" 
+			width="140" 
+			height="38"
+			fill="url(#virtual_light)" 
+			stroke="#FFFFFF" 
+			stroke-opacity="0.4"
+			id="button-reflection" />
+			
 		<textArea 
-			id="button-title" 
+			id="button-title"
+			transform="translate(5,5)" 
+			text-rendering="geometricPrecision"
 			text-align="center"
 			display-align="center"			 
 			font-size="24" 
@@ -91,21 +107,7 @@
 			fill="#EEEEEE">
 			Click!
 		</textArea>
-		
-		<rect 
-			shape-rendering="geometricPrecision"
-			transform="translate(5,5)"
-			x="0" 
-			y="0"
-			rx="5"
-			ry="5" 
-			width="140" 
-			height="38"
-			fill="url(#virtual_light)" 
-			stroke="#FFFFFF" 
-			stroke-opacity="0.4"
-			id="button-reflection" />
-	
+			
 	</g>
  
 </svg>
